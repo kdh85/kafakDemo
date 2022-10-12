@@ -4,10 +4,13 @@ spring:
       bootstrap-servers: localhost:9092
       auto-offset-reset: earliest
       enable-auto-commit: false
+      group-id: test
     listener:
       ack-mode: manual
     producer:
       bootstrap-servers: localhost:9092
+    template:
+      topic-sample : test1
 #spring:
 #  kafka:
 #    consumer:
