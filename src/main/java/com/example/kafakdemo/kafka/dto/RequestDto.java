@@ -5,9 +5,11 @@ import java.io.Serializable;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class RequestDto implements Serializable {
 	private String id;
 	private String name;
